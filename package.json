@@ -1,0 +1,26 @@
+{
+  "name": "ep_1",
+  "version": "1.0.0",
+  "description": "This is namaste react course",
+  "keywords": [
+    "react",
+    "course",
+    "namaste",
+    "react"
+  ],
+  "license": "ISC",
+  "author": "Priyanshi Sharma",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
