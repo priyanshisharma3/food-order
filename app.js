@@ -21,13 +21,18 @@ const Header = () => {
 }
 
 const RestaurantCard = () => {
-    <h3>Meghana Foods</h3>
+   return(
+    <div className="res-card">
+        <h3>Meghana Foods</h3>
+    </div>
+   )
 }
 
 const Body = () => {
     return (
         <div className="body">
             <div className="search-bar">
+                <input type="text" placeholder="Search for any restaurant" className="search-box"/>
                 <button className="search">Search</button>
             </div>
             <div className="rest-contain">
