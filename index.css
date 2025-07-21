@@ -39,7 +39,8 @@
 
 .res-card:hover{
     border: 1px solid black;
-    box-shadow: 2px 2px 30px gray;
+    box-shadow: 2px 2px 10px gray;
+    cursor: pointer;
 }
 
 .rest-contain{
@@ -66,4 +67,12 @@
 
 .cuisines{
     color: #757373;
+}
+
+.ratings{
+    padding: 5px;
+    background-color: green;
+    color: #ece4db;
+    width: 70px;
+    text-align: center;
 }
