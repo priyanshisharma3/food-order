@@ -32,9 +32,10 @@
     margin: 5px 2px;
     padding: 10px;
     width: 250px;
-    height: 350px;
+    height: auto;
     border: 1px solid #9a9898;
     background-color: #ece4db;
+    border-radius: 5px;
 }
 
 .res-card:hover{
@@ -81,11 +82,18 @@
 .res-img{
     width: 100%;
     height: 155px;
+    border-radius: 3px;
 }
 
 .discounts{
     color: #757373;
-    height: 22px;
+    height: 23px;
+}
+
+.food-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .ratings{
@@ -94,4 +102,21 @@
     color: #ece4db;
     width: 70px;
     text-align: center;
+}
+
+#veg, #non-veg{
+    height: 16px;
+    width: 15px;
+}
+
+#veg{
+    background-color: green;
+}
+
+#non-veg{
+    background-color: red;
+}
+
+.costForTwo{
+    color: #646363;
 }
