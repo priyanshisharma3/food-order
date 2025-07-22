@@ -1,6 +1,7 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
 import './index.css'
+import { resList } from "./restList.js"
 
 const Header = () => {
     return (
@@ -66,8 +67,8 @@ const Body = () => {
                     ratings="4.5 stars"
                     delTime="15 minutes"/>
                 <RestaurantCard
-                    resName="Dominos"
-                    cuisines="Pizza, Drinks, Desserts"
+                    resName="Haldirams"
+                    cuisines="Pav Bhaji, Punjabi, Chhole Bhature"
                     ratings="4.5 stars"
                     delTime="15 minutes"/>
                 {/* <RestaurantCard/>
