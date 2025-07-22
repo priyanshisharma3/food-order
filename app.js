@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client"
 import './index.css'
 import { resList } from "./restList"
 
+const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/";
+
 const Header = () => {
     return (
         <div className="header">
@@ -25,7 +27,11 @@ const RestaurantCard = (props) => {
    return(
     <div className="res-card">
         <div className="img-card">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/x4uyxvihmg8qa3pddkgf" alt="food_img" className="res-img"/>
+            <img
+                src={CDN_URL + props.resList.data.cloudinaryImageId}
+                alt={props.resList.data.name}
+                className="res-img"
+                />
         </div>
         <div className="res-desc">
             <h3>{props.resList.data.name}</h3>
