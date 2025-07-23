@@ -24,6 +24,9 @@ const Header = () => {
 }
 
 const RestaurantCard = (props) => {
+        const { avgRating,
+                name,
+                veg } = props.resList?.data 
    return(
     <div className="res-card">
         <div className="img-card">
@@ -34,19 +37,19 @@ const RestaurantCard = (props) => {
                 />
         </div>
         <div className="res-desc">
-            <h3>{props.resList.data.name}</h3>
+            <h3>{name}</h3>
 
             <h4 className="discounts">{props.resList.data?.aggregatedDiscountInfoV2?.descriptionList[0]?.meta || "No discounts today"}</h4>
 
             <div className="food-info">
-                 <h4 className="ratings">{props.resList.data.avgRating} stars</h4>
-            {
-                props.resList.data.veg === false ? (
-                    <div id="non-veg"></div>
-                ) : (
-                    <div id="veg"></div>
-                )
-            }
+                 <h4 className="ratings">{avgRating} stars</h4>
+                {
+                    veg === false ? (
+                        <div id="non-veg"></div>
+                    ) : (
+                        <div id="veg"></div>
+                    )
+                }
             </div>
 
             <h4 className="costForTwo">Cost for two: ₹{props.resList.data.costForTwo / 100}</h4>

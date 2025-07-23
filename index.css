@@ -28,6 +28,11 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.nav-items > ul > li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .res-card{
     margin: 5px 2px;
     padding: 10px;
@@ -68,7 +73,7 @@
 }
 
 .search:hover{
-    box-shadow: 1px 1px 5px #849dbb;
+    background-color: #094186;
 }
 
 .search-box{
