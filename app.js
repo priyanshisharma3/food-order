@@ -26,7 +26,8 @@ const Header = () => {
 const RestaurantCard = (props) => {
         const { avgRating,
                 name,
-                veg } = props.resList?.data 
+                veg,
+                costForTwo } = props.resList?.data 
    return(
     <div className="res-card">
         <div className="img-card">
@@ -52,7 +53,7 @@ const RestaurantCard = (props) => {
                 }
             </div>
 
-            <h4 className="costForTwo">Cost for two: ₹{props.resList.data.costForTwo / 100}</h4>
+            <h4 className="costForTwo">Cost for two: ₹{costForTwo / 100}</h4>
         </div>
     </div>
    )
