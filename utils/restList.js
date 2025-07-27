@@ -1,4 +1,4 @@
-export const resList = [
+const resList = [
   {
     type: 'restaurant',
     data: {
@@ -2041,3 +2041,5 @@ export const resList = [
     subtype: 'basic',
   },
 ];
+
+export default resList;
