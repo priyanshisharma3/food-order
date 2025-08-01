@@ -10,6 +10,12 @@ const Footer = () => {
                     <li>Premium</li>
                     <li>History</li>
                 </ul>
+                <ul>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>Help/Support</li>
+                    <li>History</li>
+                </ul>
             </div>
             <div className="compAdd">
                 Adrress: Food Alix HQ Bangalore

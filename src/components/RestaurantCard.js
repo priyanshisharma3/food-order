@@ -5,7 +5,7 @@ const RestaurantCard = (props) => {
                 name,
                 veg,
                 costForTwo,
-                cloudinaryImageId } = props.resList?.data 
+                cloudinaryImageId } = props.resList?.data
    return(
     <div className="res-card">
         <div className="img-card">

@@ -7,6 +7,9 @@ const Body = () => {
             <div className="search-bar">
                 <input type="text" placeholder="Search for any restaurant" className="search-box"/>
                 <button className="search">Search</button>
+                <button className="filter" onClick={() => {
+                    
+                }}>Top Rated</button>
             </div>
             <div className="rest-contain">
                 {resList.map((restaurant) => (
