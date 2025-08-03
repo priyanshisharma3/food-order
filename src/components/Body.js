@@ -4,14 +4,14 @@ import { useState } from "react";
 
 const Body = () => {
 
-    let [listOfRest, filterList] = useState(resList);
+    const [listOfRest, filterList] = useState(resList);
     
     return (
         <div className="body">
             <div className="search-bar">
                 <input type="text" placeholder="Search for any restaurant" className="search-box"/>
                 <button className="search">Search</button>
-                <button className="filter" onClick={() => {
+                <button className="filter-1" onClick={() => {
                     const setList = listOfRest.filter(
                         (res) => res.data.avgRating > 4
                     )
